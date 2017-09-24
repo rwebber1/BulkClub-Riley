@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->stacked_widget->setCurrentIndex(0);
 
     ui->errorLabel->hide();
-    //ui->tabWidget
+    //ui->tabWidget TEST ADDITION
 }
 
 MainWindow::~MainWindow()
