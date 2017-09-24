@@ -32,6 +32,5 @@
 *.app
 
 # QT crap
-*.pro
 *.user
 *.md

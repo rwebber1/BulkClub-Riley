@@ -28,12 +28,16 @@ void MainWindow::on_pushButton_clicked()
         //ui->login_tab->hide();
         ui->stacked_widget->setCurrentIndex(1);
         ui->errorLabel->hide();
+        ui->userEdit->clear();
+        ui->passEdit->clear();
     }
     else if(username == "manager" && password == "test")
     {
         //ui->errorLabel->show();
         ui->stacked_widget->setCurrentIndex(2);
         ui->errorLabel->hide();
+        ui->userEdit->clear();
+        ui->passEdit->clear();
     }
     else
     {

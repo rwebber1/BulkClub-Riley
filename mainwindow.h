@@ -19,10 +19,6 @@ private slots:
 
     void on_pushButton_clicked();
 
-    void on_pushButton_2_clicked();
-
-    void on_logout_button_clicked();
-
     void on_logout_button2_clicked();
 
     void on_logout_button1_clicked();
