@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# QT crap
+*.pro
+*.user
+*.md
