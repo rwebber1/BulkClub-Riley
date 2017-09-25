@@ -53,8 +53,19 @@ void MainWindow::on_logout_button1_clicked()
     ui->stacked_widget->setCurrentIndex(0);
 }
 
-void MainWindow::on_customerPurchase_t_tabBarClicked(int index)
+void MainWindow::on_customer_purchase_t_tabBarClicked(int index = 2)
 {
+    DbManager conn;
+    QSqlQueryModel *model = new QSqlQueryModel();
+    QSortFilterProxyModel *modelProxy = new QSortFilterProxyModel();
+    modelProxy->setSourceModel(model);
+    QSqlQuery *qry = new QSqlQuery(conn.m_db);
+
+    qry->prepare("SELECT name Name,id ID FROM people");
+    qry->exec();
+    model->setQuery(*qry);
+    ui->tableView_Customer->setModel(modelProxy);
+    ui->tableView_Customer->sortByColumn(1, Qt::AscendingOrder);
 
 }
 

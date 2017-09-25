@@ -27,7 +27,7 @@ private slots:
 
     void on_logout_button1_clicked();
 
-    void on_customerPurchase_t_tabBarClicked(int index);
+    void on_customer_purchase_t_tabBarClicked(int index);
 
     void on_comboBox_activated(int index);
 

@@ -27,7 +27,7 @@
 class DbManager
 {
 public:
-    DbManager(const QString& path = "E:/CS1C/BulkClub-Riley-master/inventory.db");
+    DbManager(const QString& path = "C:/Users/dsinghal0/Documents/Project1/BulkClub-Riley/BulkClub-Riley-master/inventory.db");
     QSqlDatabase m_db;
 
 private:
