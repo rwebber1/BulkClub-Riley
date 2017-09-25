@@ -11,7 +11,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->stacked_widget->setCurrentIndex(0);
 
     ui->errorLabel->hide();
-    //ui->tabWidget TEST ADDITION
 }
 
 MainWindow::~MainWindow()
@@ -26,7 +25,6 @@ void MainWindow::on_pushButton_clicked()
 
     if(username == "admin" && password == "test")
     {
-        //ui->login_tab->hide();
         ui->stacked_widget->setCurrentIndex(1);
         ui->errorLabel->hide();
         ui->userEdit->clear();
@@ -34,7 +32,6 @@ void MainWindow::on_pushButton_clicked()
     }
     else if(username == "manager" && password == "test")
     {
-        //ui->errorLabel->show();
         ui->stacked_widget->setCurrentIndex(2);
         ui->errorLabel->hide();
         ui->userEdit->clear();
