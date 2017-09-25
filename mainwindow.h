@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QSqlDatabase>
+#include <QSqlDriver>
+#include <QSqlError>
+#include <QSqlQuery>
 
 namespace Ui {
 class MainWindow;
@@ -22,6 +26,8 @@ private slots:
     void on_logout_button2_clicked();
 
     void on_logout_button1_clicked();
+
+    void on_customerPurchase_t_tabBarClicked(int index);
 
 private:
     Ui::MainWindow *ui;

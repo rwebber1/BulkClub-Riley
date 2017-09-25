@@ -27,10 +27,11 @@
 class DbManager
 {
 public:
-    DbManager(const QString& path = "/inventory.db");
+    DbManager(const QString& path = "C:/Users/cptka/OneDrive/Beast PC Backup/Documents/Saddleback Documents/Computer Science 1C/BulkClubRiley/BulkClub-Riley/inventory.db");
+    QSqlDatabase m_db;
 
 private:
-    QSqlDatabase m_db;
+
 };
 
 #endif // DBMANAGER_H

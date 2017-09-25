@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="login_page">
      <widget class="QLabel" name="userLabel">
@@ -168,7 +168,7 @@
        <string>Logout</string>
       </property>
      </widget>
-     <widget class="QTabWidget" name="tabWidget_2">
+     <widget class="QTabWidget" name="customerPurchase_t">
       <property name="geometry">
        <rect>
         <x>16</x>
@@ -178,7 +178,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="inventory_tab_m">
        <attribute name="title">
@@ -189,6 +189,21 @@
        <attribute name="title">
         <string>Membership</string>
        </attribute>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Customer Purchase List</string>
+       </attribute>
+       <widget class="QTableView" name="tableView">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>521</width>
+          <height>331</height>
+         </rect>
+        </property>
+       </widget>
       </widget>
      </widget>
      <widget class="QLabel" name="label">
